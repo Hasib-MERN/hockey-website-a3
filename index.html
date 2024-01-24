@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- DaisyUI -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+
+  <!-- manrope font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    .font-manrope {
+      font-family: 'Manrope', sans-serif;
+    }
+  </style>
+
+</head>
+
+<body class=" lg:ml-10 lg:mr-10">
+  <header>
+    <!-- navbar section -->
+    <nav class="ml-0">
+      <div class="navbar bg-base-100">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+              </svg>
+            </div>
+            <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+              <li>Home</li>
+              <li>About</li>
+              <li>Blog</li>
+              <li>Contact</li>
+            </ul>
+          </div>
+          <a class="btn btn-ghost text-xl">Hockey <span class="text-red-500">’</span>s</a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1 space-x-5 flex">
+            <li class="text-red-500 gap-0">Home</li>
+            <li>About</li>
+            <li>Blog</li>
+            <li>Contact</li>
+          </ul>
+        </div>
+        <div class="navbar-end gap-6">
+          <img class="w-5" src="images/search.svg" alt="">
+          <a class="btn bg-[#FF4240]">Get Ticket</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- banner section -->
+
+    <div class="relative carousel w-full gap-7 ">
+      <div id="slide1" class="carousel-item relative w-full">
+        <img src="images/1.png" />
+        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+          <a href="#slide4" class="btn btn-circle">❮</a>
+          <a href="#slide2" class="btn btn-circle">❯</a>
+        </div>
+      </div>
+      <div id="slide2" class="carousel-item relative w-full">
+        <img src="images/1.png" class="w-full" />
+        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+          <a href="#slide1" class="btn btn-circle">❮</a>
+          <a href="#slide3" class="btn btn-circle">❯</a>
+        </div>
+      </div>
+      <div id="slide3" class="carousel-item relative w-full">
+        <img src="images/1.png" class="w-full" />
+        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+          <a href="#slide2" class="btn btn-circle">❮</a>
+          <a href="#slide4" class="btn btn-circle">❯</a>
+        </div>
+      </div>
+      <div id="slide4" class="carousel-item relative w-full">
+        <img src="images/1.png" class="w-full" />
+        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+          <a href="#slide3" class="btn btn-circle">❮</a>
+          <a href="#slide1" class="btn btn-circle">❯</a>
+        </div>
+      </div>
+    </div>
+    <div class="text-white lg:absolute lg:right-20 lg:-bottom-4 p-7 space-y-3 lg:w-1/2 border-none rounded-xl bg-black">
+      <h3 class="font-bold">Meet all the heroes from the field</h3>
+      <p>Meeting heroes can be a transformative and awe-inspiring experience, transcending the boundaries of ordinary
+        encounters.</p>
+
+    </div>
+    <hr class="mt-5 lg:mt-20">
+  </header>
+
+  <main>
+    <div class="text-center space-y-4  mt-5 lg:mt-20">
+      <h2 class="text-2xl font-extrabold">Professional Hockeys Club</h2>
+      <p>A professional hockey club, a powerhouse of skill and strategy, unites talented athletes on the ice. With a
+        rich history and passionate fan base, they compete fiercely, aiming for glory and championships.</p>
+    </div>
+    <hr class="mt-5 lg:mt-20">
+
+    <!-- radial progressbar -->
+    <div class="mt-20  mr-5">
+      <div class="grid grid-cols-1 lg:grid-cols-4 gap-8  ">
+
+        <div class="text-center">
+          <div class="space-y-4">
+            <div class=" radial-progress text-red-500 " style="--value:87;" role="progressbar ">87%</div>
+
+            <p class="text-xl">Prayer Facility</p>
+            <p>Sacred space uniting community through prayer, reflection, and spiritual connection.</p>
+          </div>
+        </div>
+
+        <div class="text-center">
+
+          <div class="space-y-4">
+            <div class=" radial-progress text-[#49D293]" style="--value:95;" role="progressbar">95%</div>
+
+            <p class="text-xl">Experienced Coach</p>
+            <p>Elite coaches shaping champions through expertise, guidance, and seasoned leadership.</p>
+          </div>
+        </div>
+
+        <div class="text-center">
+          <div class="space-y-4">
+            <div class="radial-progress text-orange-400" style="--value:90;" role="progressbar">90%</div>
+
+            <p class="text-xl">Senior Player</p>
+            <p>Senior Player Club: Experienced athletes inspiring with skill, wisdom, and camaraderie.</p>
+          </div>
+        </div>
+
+        <div class="text-center">
+          <div class="space-y-4">
+            <div class="radial-progress text-[#4C8DF1]" style="--value:80;" role="progressbar">80%</div>
+
+            <p class="text-xl">Training Ground</p>
+            <p>Training Ground: Forge skills, teamwork, and excellence in athletic preparation hub.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr class="mt-10 lg:mt-20">
+
+
+
+
+    <!-- Program Sections -->
+
+    <div class="space-y-5 mt-5 lg:mt-12">
+      <h2 class="text-2xl font-bold text-center">Program Sections </h2>
+      <p class="text-center">Program Section: A dedicated space offering diverse initiatives, services, and resources.
+        Tailored programs cater to individual needs, fostering growth, education</p>
+    </div>
+
+    <hr class="mt-10 lg:mt-16">
+
+    <div class="gap-5 mt-20 ">
+      <div class="gap-5 grid lg:grid-cols-2">
+        <div class="card  bg-base-100 shadow-xl image-full">
+          <figure><img class="w-full" src="images/2.png" alt="Shoes" />
+          </figure>
+          <div class="card-body">
+            <div class="mt-20 space-y-2">
+              <h2 class="card-title">Junior Program</h2>
+              <p>The Junior Program fosters young talents by providing a dynamic learning environment. Tailored for
+                juniors, it combines education and fun, cultivating essential skills. Unlock potential, build
+                friendships, and embark on a journey of growth and discovery.</p>
+            </div>
+            <div class="card-actions">
+              <button class="btn text-white border-red-400 bg-[#FF4240]">Register Now!</button>
+            </div>
+          </div>
+        </div>
+        <div class="card bg-base-100 shadow-xl image-full">
+          <figure><img class="w-full" src="images/3.png" alt="Shoes" />
+          </figure>
+          <div class="card-body">
+            <div class="mt-20 space-y-2">
+              <h2 class="card-title">Teenager Program</h2>
+              <p>The Teenager Program empowers adolescents through engaging activities and meaningful learning
+                experiences. Tailored for teens, it nurtures personal development, fosters leadership skills, and builds
+                a supportive community. Join a transformative journey, where potential meets purpose.</p>
+            </div>
+            <div class="card-actions">
+              <button class="btn  text-white border-red-400 bg-[#FF4240]">Register Now!</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="grid col-span-2 mt-5">
+        <div class="card bg-base-100 shadow-xl image-full">
+          <figure><img class="w-full" src="images/4.png" alt="Shoes" />
+          </figure>
+          <div class="card-body">
+            <div class="mt-20 lg:mt-32 space-y-2 lg:space-y-5">
+              <h2 class="card-title">Professional Program</h2>
+              <p>The Professional Program is designed for career advancement, offering specialized training and
+                networking opportunities. Tailored for professionals, it accelerates skill development, fosters
+                innovation, and opens doors to new opportunities. Elevate your career with a strategic and dynamic
+                approach.</p>
+            </div>
+            <div class="card-actions">
+              <button class="btn  text-white border-red-400 bg-[#FF4240]">Register Now!</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr class="mt-5 lg:mt-16">
+
+    <!-- Our New Products -->
+
+    <div class="text-center mt-5 lg:mt-20 space-y-5">
+      <h2 class="text-2xl font-bold">Our New Products</h2>
+      <p>
+        Discover innovation with our latest products! Engineered for excellence, our new lineup combines cutting-edge
+        technology, sleek design, and enhanced features. Elevate your experience with state-of-the-art solutions that
+        redefine industry standards. Upgrade to the future today!
+      </p>
+    </div>
+    <hr class="mt-5 lg:mt-16">
+
+    <!-- card section -->
+
+    <div class="mt-5 grid grid-cols-1 lg:grid-cols-2 gap-5">
+      <!-- card-1 -->
+      <div class="hero border-2 rounded-xl border-slate-300">
+        <div class="hero-content flex-col lg:flex-row">
+          <img src="images/5.png" class="max-w-sm rounded-lg " />
+          <div>
+
+            <div class="flex gap-3">
+              <img src="images/star.png" alt="">5.00
+              <img src="images/eye.png" alt="">20
+              <img src="images/love.png" alt="">200
+            </div>
+            <h3 class="text-xl font-semibold">World Cup Flags Football</h3>
+            <p class="py-6">Nations unite on the pitch, vibrant flags flutter, chasing glory in the exhilarating World
+              Cup.</p>
+            <div class="flex gap-5">
+              <div>
+                <h3 class="font-bold text-red-600">Price - $22.00</h3>
+              </div>
+              <div class="flex">
+                <img src="images/Frame.svg" alt="">
+                <p>Delivery Fee : Free</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- card-2 -->
+      <div class="hero border-2 rounded-xl border-slate-300">
+        <div class="hero-content flex-col lg:flex-row">
+          <img src="images/6.png" class="max-w-sm rounded-lg " />
+          <div>
+
+            <div class="flex gap-3">
+              <img src="images/star.png" alt="">5.00
+              <img src="images/eye.png" alt="">20
+              <img src="images/love.png" alt="">200
+            </div>
+            <h3 class="text-xl font-semibold">World Cup Flags Football</h3>
+            <p class="py-6">Nations unite on the pitch, vibrant flags flutter, chasing glory in the exhilarating World
+              Cup.</p>
+            <div class="flex gap-5">
+              <div>
+                <h3 class="font-bold text-red-600">Price - $22.00</h3>
+              </div>
+              <div class="flex">
+                <img src="images/Frame.svg" alt="">
+                <p>Delivery Fee : Free</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- card-3 -->
+      <div class="hero border-2 rounded-xl border-slate-300">
+        <div class="hero-content flex-col lg:flex-row">
+          <img src="images/7.png" class="max-w-sm rounded-lg" />
+          <div>
+
+            <div class="flex gap-3">
+              <img src="images/star.png" alt="">5.00
+              <img src="images/eye.png" alt="">20
+              <img src="images/love.png" alt="">200
+            </div>
+            <h3 class="text-xl font-semibold">World Cup Flags Football</h3>
+            <p class="py-6">Nations unite on the pitch, vibrant flags flutter, chasing glory in the exhilarating World
+              Cup.</p>
+            <div class="flex gap-5">
+              <div>
+                <h3 class="font-bold text-red-600">Price - $22.00</h3>
+              </div>
+              <div class="flex">
+                <img src="images/Frame.svg" alt="">
+                <p>Delivery Fee : Free</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- card-4 -->
+      <div class="hero border-2 rounded-xl border-slate-300">
+        <div class="hero-content flex-col lg:flex-row">
+          <img src="images/8.png" class="max-w-sm rounded-lg" />
+          <div>
+
+            <div class="flex gap-3">
+              <img src="images/star.png" alt="">5.00
+              <img src="images/eye.png" alt="">20
+              <img src="images/love.png" alt="">200
+            </div>
+            <h3 class="text-xl font-semibold">World Cup Flags Football</h3>
+            <p class="py-6">Nations unite on the pitch, vibrant flags flutter, chasing glory in the exhilarating World
+              Cup.</p>
+            <div class="flex gap-5">
+              <div>
+                <h3 class="font-bold text-red-600">Price - $22.00</h3>
+              </div>
+              <div class="flex">
+                <img src="images/Frame.svg" alt="">
+                <p>Delivery Fee : Free</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- card-5 -->
+      <div class="hero border-2 rounded-xl border-slate-300">
+        <div class="hero-content flex-col lg:flex-row">
+          <img src="images/9.png" class="max-w-sm rounded-lg" />
+          <div>
+
+            <div class="flex gap-3">
+              <img src="images/star.png" alt="">5.00
+              <img src="images/eye.png" alt="">20
+              <img src="images/love.png" alt="">200
+            </div>
+            <h3 class="text-xl font-semibold">World Cup Flags Football</h3>
+            <p class="py-6">Nations unite on the pitch, vibrant flags flutter, chasing glory in the exhilarating World
+              Cup.</p>
+            <div class="flex gap-5">
+              <div>
+                <h3 class="font-bold text-red-600">Price - $22.00</h3>
+              </div>
+              <div class="flex">
+                <img src="images/Frame.svg" alt="">
+                <p>Delivery Fee : Free</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- card-6 -->
+      <div class="hero border-2 rounded-xl border-slate-300">
+        <div class="hero-content flex-col lg:flex-row">
+          <img src="images/10.png" class="max-w-sm rounded-lg " />
+          <div>
+
+            <div class="flex gap-3">
+              <img src="images/star.png" alt="">5.00
+              <img src="images/eye.png" alt="">20
+              <img src="images/love.png" alt="">200
+            </div>
+            <h3 class="text-xl font-semibold">World Cup Flags Football</h3>
+            <p class="py-6">Nations unite on the pitch, vibrant flags flutter, chasing glory in the exhilarating World
+              Cup.</p>
+            <div class="flex gap-5">
+              <div>
+                <h3 class="font-bold text-red-600">Price - $22.00</h3>
+              </div>
+              <div class="flex">
+                <img src="images/Frame.svg" alt="">
+                <p>Delivery Fee : Free</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <hr class="mt-5 lg:mt-16">
+
+    <!-- Clients Question -->
+
+    <div class="text-center mt-5 space-y-3 ">
+      <h3 class="text-xl font-bold">Clients Question</h3>
+      <p>Clients' questions drive understanding, spark solutions, and guide collaboration. Each inquiry unveils a unique
+        perspective, paving the path to meaningful interactions and successful outcomes in the client-business
+        relationship.</p>
+    </div>
+
+    <div class="hero ">
+      <div class="hero-content grid grid-cols-1 lg:grid-cols-2">
+        <img src="images/11.png" class="max-w-sm  rounded-lg " />
+        <div>
+
+          <div class="collapse collapse-plus">
+            <input type="radio" name="my-accordion-3" checked="checked" />
+            <div class="collapse-title text-xl font-medium">
+              Our Equipment
+            </div>
+            <div class="collapse-content">
+              <p>Essential hockey equipment includes skates, a helmet, gloves, shin guards, shoulder and elbow pads, a
+                jockstrap, pants, a jersey, a stick, and goalie gear for comprehensive player protection and
+                performance.</p>
+            </div>
+
+            <hr class="mt-5">
+          </div>
+
+          <div class="collapse collapse-plus">
+            <input type="radio" name="my-accordion-3" />
+            <div class="collapse-title text-xl font-medium">
+              Hockey Training
+            </div>
+            <div class="collapse-content">
+              <p>Hockey training is a dynamic blend of skill development, endurance conditioning, and strategic drills.
+                Skating prowess, stick handling finesse, and teamwork converge, fostering excellence on the ice for
+                aspiring players.</p>
+            </div>
+            <hr class="mt-5">
+          </div>
+
+          <div class="collapse collapse-plus">
+            <input type="radio" name="my-accordion-3" />
+            <div class="collapse-title text-xl font-medium">
+              Private Lessons
+            </div>
+            <div class="collapse-content">
+              <p>Hockey private lessons offer personalized coaching, refining skills like skating, stickhandling, and
+                shooting. Tailored guidance enhances player technique, strategy, and confidence, fostering
+                individualized growth on the ice.</p>
+            </div>
+            <hr class="mt-5">
+          </div>
+
+          <div class="collapse collapse-plus">
+            <input type="radio" name="my-accordion-3" />
+            <div class="collapse-title text-xl font-medium">
+              Ski Touring
+            </div>
+            <div class="collapse-content">
+              <p>Ski touring blends adventure and fitness, navigating pristine snow-covered landscapes. Skiers ascend
+                slopes, enjoying serene backcountry exploration, then carve thrilling descents, creating a unique and
+                immersive winter experience.</p>
+            </div>
+            <hr class="mt-5">
+          </div>
+
+          <div class="collapse collapse-plus">
+            <input type="radio" name="my-accordion-3" />
+            <div class="collapse-title text-xl font-medium">
+              Booking
+            </div>
+            <div class="collapse-content">
+              <p>Booking simplifies access to services, experiences, or accommodations. A straightforward process, it
+                offers convenience, ensuring seamless reservations and a stress-free entry into desired activities,
+                travel, or events.</p>
+            </div>
+            <hr class="mt-5">
+          </div>
+
+          <div class="collapse collapse-plus">
+            <input type="radio" name="my-accordion-3" />
+            <div class="collapse-title text-xl font-medium">
+              Pricings
+            </div>
+            <div class="collapse-content">
+              <p>Pricing is a strategic balance, reflecting value and costs. It shapes perceptions, influences
+                decisions, and sustains businesses. Transparent, fair pricing fosters trust, a key element in successful
+                transactions and relationships.</p>
+            </div>
+            <hr class="mt-5">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr class="mt-5 lg:mt-16">
+    <!-- Get In Touch -->
+
+    <div class="text-center mt-5 space-y-3">
+      <h2 class="text-xl font-bold">Get In Touch</h2>
+      <p>Feel free to reach out! Whether through email, phone, or social media, connecting is easy. Let's start a
+        conversation and explore possibilities together. Looking forward to hearing from you soon!</p>
+    </div>
+    <hr class="mt-5 lg:mt-16">
+
+    <div class=" mt-5 grid lg:grid-cols-2 gap-5">
+      <div class=" border-2 border-slate-200 p-5 rounded-xl space-y-5">
+        <div class="bg-[#BCED6D1A] p-10 rounded-xl ">
+          <img src="images/Group 1171275317.png" alt="">
+          <p>Phone Number : </p>
+          <h3 class="font-bold">(+62) 123-321-543</h3>
+        </div>
+        <div class="bg-[#FDDD5F1A] p-10 rounded-xl">
+          <img src="images/Group 1171275318.png" alt="">
+          <p>Email : </p>
+          <h3 class="font-bold">hockeys@support.com</h3>
+        </div>
+        <div class="bg-[#629CF31A] p-10 rounded-xl">
+          <img src="images/Group 1171275321.png" alt="">
+          <p>Location : </p>
+          <h3 class="font-bold">152/1 Mohakhali Wireless Gate</h3>
+        </div>
+      </div>
+
+
+
+      <!-- form section -->
+      <div class=" space-y-5 border-2 border-slate-200 rounded-xl p-5">
+        <div class="grid lg:grid-cols-2 gap-5">
+          <div>
+            <div>
+              <h3 class="font-bold">Your Name</h3>
+              <input class="p-5 bg-[#BCED6D1A] w-full" type="text" placeholder="Enter full name here">
+            </div>
+
+            <div>
+              <h3 class="font-bold">Your Mail</h3>
+              <input class="p-5 bg-[#BCED6D1A] w-full" type="text" placeholder="Enter your mail">
+            </div>
+          </div>
+
+          <div>
+            <div>
+              <h3 class="font-bold">Subject</h3>
+              <input class="p-5 bg-[#BCED6D1A] w-full" type="text" placeholder="Enter your subject">
+            </div>
+
+            <div>
+              <h3 class="font-bold">Phone Number</h3>
+              <input class="p-5 bg-[#BCED6D1A] w-full" type="text" placeholder="Enter your subject">
+            </div>
+          </div>
+        </div>
+
+
+
+        <div>
+          <h3 class="font-bold">Message</h3>
+          <input class=" bg-[#BCED6D1A] w-full pt-5 pl-5 pb-56" type="text" placeholder="Write your message">
+        </div>
+        <button class="w-full bg-red-500 py-5 rounded-xl text-white font-semibold">Send Message</button>
+      </div>
+    </div>
+
+    <!-- social media section -->
+
+    <div class="mt-5 lg:mt-14 text-center bg-[#BCED6D1A] lg:p-10 rounded-xl">
+      <h3 class="text-xl font-bold">Social Media</h3>
+      <div class="flex justify-center gap-5 mt-5 ">
+        <img src="images/twitter.svg" alt="">
+        <img src="images/facebook-f.svg
+     " alt="">
+        <img src="images/instagram.svg" alt="">
+        <img src="images/github.svg" alt="">
+      </div>
+    </div>
+
+  </main>
+
+
+  <!-- footer -->
+
+  <footer class="bg-[#131318] lg:mt-14 lg:ml-0 lg:mr-0">
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-10 space-y-7 p-11">
+
+      <!-- Get In Touch -->
+
+      <div class=" text-white space-y-5 mt-8">
+        <h3 class="text-xl font-semibold">Get In Touch</h3>
+        <p class="opacity-30">Contact me! Let's connect, discuss ideas, and explore opportunities. <br> Reach out today
+          for meaningful
+          conversations.
+        </p>
+
+        <div class="flex gap-3">
+          <img src="images/email.png" alt="">
+          <p class="opacity-30">hockeys@support.com</p>
+        </div>
+
+        <div class="flex gap-2">
+          <img src="images/phone.png" alt="">
+          <p class="opacity-30">(+62) 123-321-543</p>
+        </div>
+
+      </div>
+
+      <div class="grid grid-cols-2 gap-5 lg:gap-14">
+        <!-- Company -->
+
+        <div class=" text-white">
+          <h3 class="text-xl font-semibold">Company</h3>
+          <div class="mt-3 space-y-5 opacity-30">
+            <p>About us</p>
+            <p>Leadership</p>
+            <p>Careers</p>
+            <p>News & article</p>
+            <p>Legal Notice</p>
+          </div>
+        </div>
+
+        <!-- Support -->
+
+
+        <div class=" text-white">
+          <h3 class="text-xl font-semibold">Support</h3>
+          <div class="mt-3 space-y-5 opacity-30">
+            <p>Help Center</p>
+            <p>FAQ</p>
+            <p>Ticket Support</p>
+            <p>Contact Us</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Service -->
+
+      <div class=" text-white">
+        <h3 class="text-xl font-semibold">Service</h3>
+        <div class="mt-5 space-y-5 opacity-30">
+          <p>Academy</p>
+          <p>Group Lesson</p>
+          <p>Private Lesson</p>
+          <p>Hockeys for kids</p>
+          <p>Hockeys for adults</p>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+
+</body>
+
+</html>
